@@ -1,0 +1,11 @@
+framework module DepsSDK {
+  umbrella header "DepsSDK.h"
+  export *
+
+  module * { export * }
+}
+
+module DepsSDK.Swift {
+  header "DepsSDK-Swift.h"
+  requires objc
+}

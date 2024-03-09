@@ -8,11 +8,13 @@
 
 /* Begin PBXBuildFile section */
 		DE0481EF2B9C99AE002AFDA5 /* DepsSDK.h in Headers */ = {isa = PBXBuildFile; fileRef = DE0481EE2B9C99AE002AFDA5 /* DepsSDK.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		DE0481F62B9C9C70002AFDA5 /* DepsSDKInitiate.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE0481F52B9C9C70002AFDA5 /* DepsSDKInitiate.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		DE0481EB2B9C99AE002AFDA5 /* DepsSDK.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = DepsSDK.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		DE0481EE2B9C99AE002AFDA5 /* DepsSDK.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = DepsSDK.h; sourceTree = "<group>"; };
+		DE0481F52B9C9C70002AFDA5 /* DepsSDKInitiate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DepsSDKInitiate.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -46,6 +48,7 @@
 			isa = PBXGroup;
 			children = (
 				DE0481EE2B9C99AE002AFDA5 /* DepsSDK.h */,
+				DE0481F52B9C9C70002AFDA5 /* DepsSDKInitiate.swift */,
 			);
 			path = DepsSDK;
 			sourceTree = "<group>";
@@ -93,6 +96,7 @@
 				TargetAttributes = {
 					DE0481EA2B9C99AE002AFDA5 = {
 						CreatedOnToolsVersion = 15.0;
+						LastSwiftMigration = 1500;
 					};
 				};
 			};
@@ -129,6 +133,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				DE0481F62B9C9C70002AFDA5 /* DepsSDKInitiate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -263,6 +268,8 @@
 		DE0481F32B9C99AE002AFDA5 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				BUILD_LIBRARY_FOR_DISTRIBUTION = YES;
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEFINES_MODULE = YES;
@@ -285,8 +292,9 @@
 				MODULE_VERIFIER_SUPPORTED_LANGUAGE_STANDARDS = "gnu17 gnu++20";
 				PRODUCT_BUNDLE_IDENTIFIER = com.personal.DepsSDK;
 				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
-				SKIP_INSTALL = YES;
+				SKIP_INSTALL = NO;
 				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
@@ -295,6 +303,8 @@
 		DE0481F42B9C99AE002AFDA5 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				BUILD_LIBRARY_FOR_DISTRIBUTION = YES;
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEFINES_MODULE = YES;
@@ -317,7 +327,7 @@
 				MODULE_VERIFIER_SUPPORTED_LANGUAGE_STANDARDS = "gnu17 gnu++20";
 				PRODUCT_BUNDLE_IDENTIFIER = com.personal.DepsSDK;
 				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
-				SKIP_INSTALL = YES;
+				SKIP_INSTALL = NO;
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";

@@ -8,11 +8,15 @@
 
 /* Begin PBXBuildFile section */
 		DE0481DB2B9C999D002AFDA5 /* MainSDK.h in Headers */ = {isa = PBXBuildFile; fileRef = DE0481DA2B9C999D002AFDA5 /* MainSDK.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		DE0481F82B9CB3F5002AFDA5 /* MainSDKInitiate.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE0481F72B9CB3F5002AFDA5 /* MainSDKInitiate.swift */; };
+		DE0481FB2B9CB5A6002AFDA5 /* DepsSDK.xcframework in Frameworks */ = {isa = PBXBuildFile; fileRef = DE0481FA2B9CB5A6002AFDA5 /* DepsSDK.xcframework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		DE0481D72B9C999D002AFDA5 /* MainSDK.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = MainSDK.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		DE0481DA2B9C999D002AFDA5 /* MainSDK.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MainSDK.h; sourceTree = "<group>"; };
+		DE0481F72B9CB3F5002AFDA5 /* MainSDKInitiate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainSDKInitiate.swift; sourceTree = "<group>"; };
+		DE0481FA2B9CB5A6002AFDA5 /* DepsSDK.xcframework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcframework; name = DepsSDK.xcframework; path = ../XCFrameworks/DepsSDK.xcframework; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -20,6 +24,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				DE0481FB2B9CB5A6002AFDA5 /* DepsSDK.xcframework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -31,6 +36,7 @@
 			children = (
 				DE0481D92B9C999D002AFDA5 /* MainSDK */,
 				DE0481D82B9C999D002AFDA5 /* Products */,
+				DE0481F92B9CB5A6002AFDA5 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -46,8 +52,17 @@
 			isa = PBXGroup;
 			children = (
 				DE0481DA2B9C999D002AFDA5 /* MainSDK.h */,
+				DE0481F72B9CB3F5002AFDA5 /* MainSDKInitiate.swift */,
 			);
 			path = MainSDK;
+			sourceTree = "<group>";
+		};
+		DE0481F92B9CB5A6002AFDA5 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				DE0481FA2B9CB5A6002AFDA5 /* DepsSDK.xcframework */,
+			);
+			name = Frameworks;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -93,6 +108,7 @@
 				TargetAttributes = {
 					DE0481D62B9C999D002AFDA5 = {
 						CreatedOnToolsVersion = 15.0;
+						LastSwiftMigration = 1500;
 					};
 				};
 			};
@@ -129,6 +145,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				DE0481F82B9CB3F5002AFDA5 /* MainSDKInitiate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -263,6 +280,8 @@
 		DE0481DF2B9C999D002AFDA5 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				BUILD_LIBRARY_FOR_DISTRIBUTION = YES;
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEFINES_MODULE = YES;
@@ -285,8 +304,9 @@
 				MODULE_VERIFIER_SUPPORTED_LANGUAGE_STANDARDS = "gnu17 gnu++20";
 				PRODUCT_BUNDLE_IDENTIFIER = com.personal.MainSDK;
 				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
-				SKIP_INSTALL = YES;
+				SKIP_INSTALL = NO;
 				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
@@ -295,6 +315,8 @@
 		DE0481E02B9C999D002AFDA5 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				BUILD_LIBRARY_FOR_DISTRIBUTION = YES;
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEFINES_MODULE = YES;
@@ -317,7 +339,7 @@
 				MODULE_VERIFIER_SUPPORTED_LANGUAGE_STANDARDS = "gnu17 gnu++20";
 				PRODUCT_BUNDLE_IDENTIFIER = com.personal.MainSDK;
 				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
-				SKIP_INSTALL = YES;
+				SKIP_INSTALL = NO;
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
