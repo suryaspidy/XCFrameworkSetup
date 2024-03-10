@@ -1,0 +1,24 @@
+{
+  "name": "DepsSDK",
+  "version": "1.0.0",
+  "summary": "Dependency SDK",
+  "authors": {
+    "UnAnimous": "unanimous@mail.com"
+  },
+  "license": {
+    "type": "MIT",
+    "text": "LICENSE"
+  },
+  "homepage": "https:www.github.com",
+  "source": {
+    "https": "https://www.github.com"
+  },
+  "platforms": {
+    "ios": "13.0"
+  },
+  "requires_arc": true,
+  "ios": {
+    "vendored_frameworks": "XCFrameworks/DepsSDK.xcframework"
+  },
+  "frameworks": "UIKit"
+}

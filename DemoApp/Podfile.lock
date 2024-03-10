@@ -1,0 +1,22 @@
+PODS:
+  - DepsSDK (1.0.0)
+  - MainSDK (1.0.0):
+    - DepsSDK
+
+DEPENDENCIES:
+  - DepsSDK (from `/Users/surya-15302/Work/POCs/XCFrameworkSetup`)
+  - MainSDK (from `/Users/surya-15302/Work/POCs/XCFrameworkSetup`)
+
+EXTERNAL SOURCES:
+  DepsSDK:
+    :path: "/Users/surya-15302/Work/POCs/XCFrameworkSetup"
+  MainSDK:
+    :path: "/Users/surya-15302/Work/POCs/XCFrameworkSetup"
+
+SPEC CHECKSUMS:
+  DepsSDK: 6f2db61bb58cd373c63085c74ab630e54125751e
+  MainSDK: 14d67e60b713e84cf578fffb4d4b820e9eb09ebd
+
+PODFILE CHECKSUM: be5476907a7ec5fcad59629fc68d4c404ecc859c
+
+COCOAPODS: 1.15.0

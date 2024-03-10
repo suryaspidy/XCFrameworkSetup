@@ -20,6 +20,32 @@
         "printedName": "DepsSDKInitiate",
         "children": [
           {
+            "kind": "Constructor",
+            "name": "init",
+            "printedName": "init()",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "DepsSDKInitiate",
+                "printedName": "DepsSDK.DepsSDKInitiate",
+                "usr": "c:@M@DepsSDK@objc(cs)DepsSDKInitiate"
+              }
+            ],
+            "declKind": "Constructor",
+            "usr": "c:@M@DepsSDK@objc(cs)DepsSDKInitiate(im)init",
+            "mangledName": "$s7DepsSDK0A11SDKInitiateCACycfc",
+            "moduleName": "DepsSDK",
+            "overriding": true,
+            "objc_name": "init",
+            "declAttributes": [
+              "Dynamic",
+              "ObjC",
+              "Override",
+              "AccessControl"
+            ],
+            "init_kind": "Designated"
+          },
+          {
             "kind": "Function",
             "name": "availabilityCheck",
             "printedName": "availabilityCheck()",
@@ -49,7 +75,6 @@
           "ObjC"
         ],
         "superclassUsr": "c:objc(cs)NSObject",
-        "hasMissingDesignatedInitializers": true,
         "inheritsConvenienceInitializers": true,
         "superclassNames": [
           "ObjectiveC.NSObject"
@@ -113,7 +138,7 @@
     {
       "filePath": "\/Users\/surya-15302\/Work\/POCs\/XCFrameworkSetup\/DepsSDK\/DepsSDK\/DepsSDKInitiate.swift",
       "kind": "StringLiteral",
-      "offset": 248,
+      "offset": 255,
       "length": 31,
       "value": "\"Log print from Dependency SDK\""
     }

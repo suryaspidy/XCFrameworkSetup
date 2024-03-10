@@ -8,7 +8,8 @@ import Swift
 import _Concurrency
 import _StringProcessing
 import _SwiftConcurrencyShims
-@_inheritsConvenienceInitializers @_hasMissingDesignatedInitializers @objc public class DepsSDKInitiate : ObjectiveC.NSObject {
+@_inheritsConvenienceInitializers @objc public class DepsSDKInitiate : ObjectiveC.NSObject {
+  @objc override dynamic public init()
   public func availabilityCheck()
   @objc deinit
 }

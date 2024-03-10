@@ -1,0 +1,3 @@
+${PODS_ROOT}/Target Support Files/Pods-DemoApp/Pods-DemoApp-frameworks.sh
+${PODS_XCFRAMEWORKS_BUILD_DIR}/DepsSDK/DepsSDK.framework/DepsSDK
+${PODS_XCFRAMEWORKS_BUILD_DIR}/MainSDK/MainSDK.framework/MainSDK

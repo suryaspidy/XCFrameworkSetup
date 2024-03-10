@@ -8,7 +8,7 @@
 import Foundation
 
 @objc public class DepsSDKInitiate: NSObject {
-    override init() {
+    public override init() {
         
     }
     

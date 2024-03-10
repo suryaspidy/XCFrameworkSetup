@@ -9,7 +9,7 @@ import Foundation
 import DepsSDK
 
 @objc public class MainSDKInitiate: NSObject {
-    override init() {
+    public override init() {
         
     }
     
